@@ -4,29 +4,34 @@ function Navbar(): JSX.Element {
 	const navOptions = () => {
 		const options: Option[] = [
 			{
+				id: 1,
 				name: "Pricing",
 				url: "#",
 			},
 			{
+				id: 2,
 				name: "Product",
 				url: "#",
 			},
 			{
+				id: 3,
 				name: "About Us",
 				url: "#",
 			},
 			{
+				id: 4,
 				name: "Careers",
 				url: "#",
 			},
 			{
+				id: 5,
 				name: "Community",
 				url: "#",
 			},
 		];
 
 		return options.map((option: Option) => (
-			<a href={option.url} className="hover:text-white">
+			<a key={option.id} href={option.url} className="hover:text-white">
 				{option.name}
 			</a>
 		));
