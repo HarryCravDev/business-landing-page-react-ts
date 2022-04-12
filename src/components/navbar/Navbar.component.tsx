@@ -1,6 +1,7 @@
+import React from "react";
 import { Option } from "./Types/IOption";
 
-function Navbar(): JSX.Element {
+const Navbar: React.FC = () => {
 	const navOptions = () => {
 		const options: Option[] = [
 			{
@@ -46,7 +47,7 @@ function Navbar(): JSX.Element {
 						alt="company-logo"
 					/>
 				</div>
-				<div className="hidden md:flex space-x-6">{navOptions()}</div>
+				<div className="hidden space-x-6 md:flex">{navOptions()}</div>
 				<a
 					href="#"
 					className="btn btn-accent px-6 text-white rounded-full baseline hover:bg-accent-focus"
@@ -56,6 +57,6 @@ function Navbar(): JSX.Element {
 			</div>
 		</nav>
 	);
-}
+};
 
 export default Navbar;
