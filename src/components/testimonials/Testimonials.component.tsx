@@ -48,6 +48,14 @@ const Testimonials = () => {
 					/>
 				))}
 			</div>
+			<div className="my-16">
+				<a
+					href="#"
+					className="p-3 px-6 pt-2 text-white bg-primary rounded-full baseline hover:bg-secondary"
+				>
+					Get Started
+				</a>
+			</div>
 		</div>
 	);
 };
