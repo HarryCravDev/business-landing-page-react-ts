@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 
 const Hero: React.FC = () => {
-	const heroClick = () => {
+	const heroButtonClick = () => {
 		console.log("Hero click...");
 	};
 
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
 					<a
 						href="#"
 						className="btn p-3 px-6 pt-2 text-white rounded-full baseline"
-						onClick={heroClick}
+						onClick={heroButtonClick}
 					>
 						Get Started
 					</a>

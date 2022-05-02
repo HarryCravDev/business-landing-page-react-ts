@@ -39,9 +39,9 @@ const Features = () => {
 				</p>
 			</div>
 			<div className="flex flex-col space-y-8 md:w-1/2">
-				{feature().map((feature, index: number) => (
+				{feature().map((feature: FeatureProp, index: number) => (
 					<Feature
-						key={feature.number}
+						key={index}
 						number={feature.number}
 						title={feature.title}
 						desc={feature.desc}
