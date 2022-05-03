@@ -38,6 +38,10 @@ const Navbar: React.FC = () => {
 		));
 	};
 
+	const onButtonClick = () => {
+		console.log("On navbar button click");
+	};
+
 	return (
 		<nav className="relative container mx-auto p-6 bg-primary">
 			<div className="flex items-center justify-between">
@@ -51,6 +55,7 @@ const Navbar: React.FC = () => {
 				<a
 					href="#"
 					className="btn btn-accent px-6 text-white rounded-full baseline hover:bg-accent-focus"
+					onClick={onButtonClick}
 				>
 					Get Started
 				</a>
